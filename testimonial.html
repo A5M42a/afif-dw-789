@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title>Batch 45</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <div></div>
+  </body>
+</html>
+<html>
+  <head>
+    <title>My Website</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="assets/images/dw.png" alt="dw" class="logo" />
+        <ul>
+          <li class="item-collapse">
+            <a href="index.html"> Home </a>
+          </li>
+          <li class="item-collapse">
+            <a href="my-project.html"> My Project </a>
+          </li>
+          <li class="item-collapse">
+            <a href="testimonial.html"> My Testimonial </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-right item-collapse">
+        <a href="contact.html">Contact</a>
+      </div>
+      <div id="barsmenu" style="margin-right: 10px">
+        <button
+          style="background-color: transaparent; border: none; cursor: pointer"
+          onclick="openHamburger()"
+        >
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="my-project.html">My Project</a>
+      <a href="testimonial.html" class="hamburger-active"> My Testimonial</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="cont-testi">
+      <h1>My Testimonial</h1>
+      <div class="container-rating">
+        <h2>Rating By Star</h2>
+        <div class="rating">
+          <button class="rating-btn" onclick="allTestimonials()">All</button>
+          <button class="rating-btn" onclick="filterTestimonials(1)">
+            1 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonials(2)">
+            2 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonials(3)">
+            3 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonials(4)">
+            4 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonials(5)">
+            5 <i class="fa-solid fa-star"></i>
+          </button>
+        </div>
+      </div>
+      <section id="testi-item" class="testi-item">
+        <div class="list-testi">
+          <img src="assets/images/bg.jpeg" alt="" />
+          <p class="quote">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            eget lectus eu libero venenatis gravida eget vel odio."
+          </p>
+          <p class="author">- Turu</p>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="assets/js/hamburger.js"></script>
+  <script src="assets/js/testimoni.js"></script>
+</html>
