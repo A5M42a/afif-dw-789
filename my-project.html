@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-left">
+        <img src="assets/images/dw.png" alt="dw" class="logo" />
+        <ul>
+          <li class="item-collapse">
+            <a href="index.html"> Home </a>
+          </li>
+          <li class="item-collapse">
+            <a href="my-project.html"> My Project </a>
+          </li>
+          <li class="item-collapse">
+            <a href="testimonial.html"> My Testimonial </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-right item-collapse">
+        <a href="contact.html">Contact</a>
+      </div>
+      <div id="barsmenu" style="margin-right: 10px">
+        <button
+          style="background-color: transaparent; border: none; cursor: pointer"
+          onclick="openHamburger()"
+        >
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="my-project.html" class="hamburger-active">My Project</a>
+      <a href="testimonial.html"> My Testimonial</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <form class="cont-project" onsubmit="getData(event)">
+      <h2>ADD My Project</h2>
+      <div>
+        <label for="input-project">Project Name</label>
+        <input id="input-project" type="text" />
+      </div>
+
+
+      <div class="cont-date">
+        <div class="left-date">
+          <label for="input-stdate">Start Date</label>
+          <input id="input-stdate" type="date" />
+        </div>
+        <div class="right-date">
+          <label for="input-endate">End Date</label>
+          <input id="input-endate" type="date" />
+        </div>
+      </div>
+      <div>
+        <label for="input-description">Desciption</label>
+        <textarea name="" id="input-description" cols="30" rows="10"></textarea>
+      </div>
+      <div class="checkbox-grid">
+        <p>Technologies</p>
+        <div class="tech-grid">
+          <label for="node-js" class="cont-check">
+            <input type="checkbox" id="node-js"/>
+            Node Js
+          </label>
+          <label for="react-js" class="cont-check">
+            <input type="checkbox" id="react-js"/>
+            React Js
+          </label>
+          <label for="next-js" class="cont-check">
+            <input type="checkbox" id="next-js"/>
+            Next Js
+          </label>
+          <label for="type-script" class="cont-check">
+            <input type="checkbox" id="type-script"/>
+            <span></span>
+            Type Script
+          </label>
+        </div>
+      </div>
+      <div class="upload-cont">
+        <label for="input-upload">Upload Image</label>
+        <input id="input-upload" type="file" />
+        <img src="assets/images/file.png" alt="">
+      </div>
+      <div>
+        <button class="pro-submit">submit</button>
+      </div>
+    </form>
+      <div class="project-list" id="contents">
+        <!-- dynamic content would be here -->
+        <div class="container-list">
+          <h1 class="title-project">MY PROJECT</h1>
+          <div class="container-project" id="cardProject">
+            <div class="list-project" >
+              <img src="assets/images/bg.jpeg" />
+              <a href="projectDetail.html" class="title-content">
+                <h3>Dumbways Web App - 2023</h3>
+              </a>
+      
+              <div class="title-durasi">
+                <p>Durasi : 3 Bulan</p>
+              </div>
+      
+              <div class="desc-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                  molestias laboriosam delectus asperiores dignissimos quo labore.
+                </p>
+              </div>
+      
+              <div class="cont-icons">
+                <div class="icon">
+                  <i class="fa-brands fa-node-js fa-2x"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-react fa-2x"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-golang fa-2x"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-square-js fa-2x"></i>
+                </div>
+              </div>
+      
+              <div class="cont-btn">
+                <div class="btn-edit">
+                  <button type="button">Edit</button>
+                </div>
+      
+                <div class="btn-delete">
+                  <button type="button">Delete</button>
+                </div>
+              </div>
+            </div>
+    
+            
+
+          </div>
+        </div>
+        <!-- dynamic content End -->
+      </div>
+    </div>
+  </body>
+  <script src="assets/js/myproject.js"></script>
+  <script src="assets/js/hamburger.js"></script>
+</html>
